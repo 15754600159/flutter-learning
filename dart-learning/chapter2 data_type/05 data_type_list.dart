@@ -64,6 +64,18 @@ void main() {
   print(list1.reversed.toList());
 
   list1.addAll(['香蕉', '苹果']);
+
+  // 遍历
+  print('for loop ------');
+  for (int i = 0; i < list1.length; i++) {
+    print(list1[i]);
+  }
+  print('for in loop ------');
+  for ( var o in list1) {
+    print(o);
+  }
+  print('foreach loop ------');
+  list1.forEach((val){
+    print(val);
+  });
 }
-
-

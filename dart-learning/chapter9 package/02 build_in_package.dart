@@ -1,13 +1,17 @@
 /**
  * 系统内置库: io
+ * 系统内置库: math
  */
 
 import 'dart:io';
 import 'dart:convert';
+import 'dart:math';
 
 void main() async {
   var result = await _getApiInfo();
   print(result);
+
+  print(min(1, 2));
 }
 
 _getApiInfo() async {

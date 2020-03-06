@@ -5,8 +5,6 @@
  * 3. 子类调用父类方法
  */
 
-import 'person.dart';
-
 void main() {
   var student = new Student();
   student.study();
@@ -17,6 +15,18 @@ void main() {
   student.run();
   // 私有属性不能继承
   // student._birthday;
+}
+
+class Person {
+  String name;
+  int age;
+  String _birthday;
+
+  bool get isAdult => age > 18;
+
+  void run() {
+    print('Person run...');
+  }
 }
 
 class Student extends Person {

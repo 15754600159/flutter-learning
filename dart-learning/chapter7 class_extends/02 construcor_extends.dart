@@ -3,9 +3,10 @@
  */
 
 void main() {
-  var student = new Student('Tom', 'Male');
+  var student = new Student('Tom', 'Male', 2);
 
   print(student.name);
+  print(student.age);
 }
 
 class Person {
@@ -19,5 +20,8 @@ class Student extends Person {
   int age;
   final gender;
 
-  Student(String name, String gender): gender = gender, super(name);
+  // age为可选参数
+  Student(String name, this.gender, [this.age = 1]): super(name) {
+    print('构造方法体');
+  }
 }

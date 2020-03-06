@@ -1,3 +1,8 @@
+/**
+ * 网络库库: http
+ *  1. 在pubspec.yaml中写依赖项
+ */
+
 import 'dart:convert' as convert;
 import 'package:http/http.dart' as http;
 

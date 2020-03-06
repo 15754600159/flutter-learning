@@ -38,4 +38,14 @@ void main() {
 
   print(map1.keys);
   print(map1.values);
+
+  // 遍历
+  print('遍历------------');
+  map1.forEach((key, value) {
+    print('$key: $value');
+  });
+  Map map4 = map1.map((key, value) {
+    return MapEntry(value, key);
+  });
+  print('key value调换：$map4');
 }
